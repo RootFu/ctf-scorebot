@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from multiprocessing import Process
 
 import sys
@@ -25,7 +26,9 @@ def main(argv):
 		opts,args = getopt.gnu_getopt(argv[1:],"ic:")
 	except getopt.GetoptError as err:
 		print str(err)
-		print "Usage..."
+		print "Usage: ",sys.argv[0]," [-i] [-c <config file>]"
+		print "-i\t\t\tInitialize new game"
+		print "-c <config file>\tPath to alternate config.ini"
 		sys.exit(2)
 
 	initialize = False
