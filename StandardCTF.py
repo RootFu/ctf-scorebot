@@ -26,7 +26,7 @@ def main(argv):
 		opts,args = getopt.gnu_getopt(argv[1:],"ic:")
 	except getopt.GetoptError as err:
 		print str(err)
-		print "Usage: ",sys.argv[0]," [-i] [-c <config file>]"
+		print "Usage: %s [-i] [-c <config file>]" % sys.argv[0]
 		print "-i\t\t\tInitialize new game"
 		print "-c <config file>\tPath to alternate config.ini"
 		sys.exit(2)

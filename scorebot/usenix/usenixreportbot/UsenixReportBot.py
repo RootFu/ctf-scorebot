@@ -6,7 +6,7 @@ from multiprocessing import Process
 
 from scorebot.common.communication.BotCommClient import BotCommClient
 from scorebot.common.communication.BotMessage import BotMessage
-from scorebot.gamelogic.usenix.usenixreportbot.UsenixReportServer import UsenixReportServer
+from scorebot.usenix.usenixreportbot.UsenixReportServer import UsenixReportServer
 
 class UsenixReportServerThread(threading.Thread):
 

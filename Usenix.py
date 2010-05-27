@@ -5,17 +5,17 @@ import time
 
 from scorebot.config.Config import Config
 from scorebot.config.ConfigIniParser import ConfigIniParser
-from scorebot.servicebot.ServiceBot import ServiceBot
+from scorebot.standard.servicebot.ServiceBot import ServiceBot
 from scorebot.attackengine.attackbot.AttackBot import AttackBot
-from scorebot.gamestatebot.GameStateBot import GameStateBot
+from scorebot.common.gamestatebot.GameStateBot import GameStateBot
 
-from scorebot.gamelogic.usenix.UsenixLogic import UsenixLogic
-from scorebot.gamelogic.usenix.UsenixPublicLogic import UsenixPublicLogic
-from scorebot.gamelogic.usenix.UsenixConfig import UsenixExploitConfigHandler
-from scorebot.gamelogic.usenix.UsenixConfig import UsenixConfigHandler
-from scorebot.gamelogic.usenix.usenixexploitbot.UsenixExploitBot import UsenixExploitBot
-from scorebot.gamelogic.usenix.usenixreportbot.UsenixReportBot import UsenixReportBot
-from scorebot.servicebot.ServiceBotConfig import ServiceBotConfigHandler, ServiceConfigHandler
+from scorebot.usenix.UsenixLogic import UsenixLogic
+from scorebot.usenix.UsenixPublicLogic import UsenixPublicLogic
+from scorebot.usenix.UsenixConfig import UsenixExploitConfigHandler
+from scorebot.usenix.UsenixConfig import UsenixConfigHandler
+from scorebot.usenix.usenixexploitbot.UsenixExploitBot import UsenixExploitBot
+from scorebot.usenix.usenixreportbot.UsenixReportBot import UsenixReportBot
+from scorebot.standard.servicebot.ServiceBotConfig import ServiceBotConfigHandler, ServiceConfigHandler
 #from scorebot.attackengine.attackbot.AttackConfig import AttackConfigHandler
 
 def usage(argv):

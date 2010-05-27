@@ -5,9 +5,9 @@ import os
 from scorebot.common.communication.BotMessage import BotMessage
 from scorebot.common.communication.BotCommServer import BotCommServer
 from scorebot.common.models.GameStateServerInfo import GameStateServerInfo
-from scorebot.gamestatebot.GameStateLogic import GameStateLogic
-from scorebot.gamelogic.usenix.UsenixScoring import UsenixPublicScoring
-from scorebot.gamelogic.usenix.usenixreportbot.UsenixReportBot import UsenixReportBot
+from scorebot.common.gamestatebot.GameStateLogic import GameStateLogic
+from scorebot.usenix.UsenixScoring import UsenixPublicScoring
+from scorebot.usenix.usenixreportbot.UsenixReportBot import UsenixReportBot
 
 class UsenixPublicLogic(GameStateLogic):
 

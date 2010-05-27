@@ -8,8 +8,8 @@ from scorebot.common.communication.BotMessage import BotMessage
 from scorebot.common.communication.BotCommServer import BotCommServer
 from scorebot.common.models.GameStateServerInfo import GameStateServerInfo
 from scorebot.common.models.Flag import Flag,FlagManager,FlagParseException
-from scorebot.gamestatebot.GameStateLogic import GameStateLogic
-from scorebot.gamelogic.usenix.UsenixScoring import UsenixPrivateScoring
+from scorebot.common.gamestatebot.GameStateLogic import GameStateLogic
+from scorebot.usenix.UsenixScoring import UsenixPrivateScoring
 
 class RebootThread(threading.Thread):
 
