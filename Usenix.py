@@ -35,13 +35,13 @@ def startBot(bot,init):
 		startPublic(init)
 
 	elif(bot == "server"):
-		print "Start Server!",init
+		print "FIXME: Should start Server"
 
 	elif(bot == "attack"):
-		print "Start Attack!",init
+		print "FIXME: Should start Attack"
 
 	elif(bot == "scoreboard"):
-		print "Start Scoreboard!",init
+		print "FIXME: Should start Scoreboard"
 
 	else:
 		print usage(sys.argv)
