@@ -1,0 +1,37 @@
+body
+{
+	background-image: url("security.jpg");  
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+#wrapper 
+{
+	width:800px;
+	height:400px;
+
+	margin-left:auto;
+	margin-right:auto;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	margin-top:-100px;
+	margin-left:-400px;
+
+	/*allows us to see wrapper*/
+	/*background-color:red;*/
+}
+
+#output
+{
+	width: auto;
+	height: auto;
+
+	color: #00FF00;
+	background-color: black;
+}

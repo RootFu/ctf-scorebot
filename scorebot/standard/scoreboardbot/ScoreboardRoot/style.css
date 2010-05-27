@@ -1,0 +1,32 @@
+body 
+{
+  font-family: 		Georgia, "Times New Roman",
+        			Times, serif;
+  background-color: #FFFFFF; 
+}
+
+td
+{
+	color: #000000;
+}
+
+th
+{
+	color: #000000;
+	font-size: 24px; 
+}
+
+td.status_good
+{
+	color: green;
+}
+
+td.status_bad
+{
+	color: yellow;
+}
+
+td.status_error
+{
+	color: red;
+}

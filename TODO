@@ -1,0 +1,4 @@
+Added timing to submit bot (check for to frequent submissions)
+Add config options for scoreboard (port number to use)
+Add config options for submitbot (port number to use)
+Add ablity to save/restore gamestate

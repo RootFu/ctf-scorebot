@@ -1,0 +1,5 @@
+To start a simple CTF game, run:
+
+python StandardCTF.py -i -c <config_file>
+
+The -i argument initializes a new game. Foregoing the -i will cause the game to attempt to restore from the previous game.

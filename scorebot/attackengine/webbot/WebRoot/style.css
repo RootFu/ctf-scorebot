@@ -1,0 +1,145 @@
+* 	{margin: 0;
+	padding: 0;}
+
+body {
+	background-color: #000000;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+	font-size: 62.5%;
+}
+	  
+#container {
+	margin-top: 12px;
+	margin: auto;
+	width: 622px;
+	color: #CBCBCB;
+	font-family: Microsoft Sans Serif, "Times New Roman", Times, serif;
+	font-size: 9pt;
+}
+
+#header {
+	margin: auto;
+	background-image: url(images/header.jpg);
+	height: 349px;
+	width: 600px;
+}
+
+
+#menu {
+
+	font-family: Microsoft Sans Serif, "Times New Roman", Times, serif;
+	font-size: 8pt;
+	font-style: none;
+	margin-left: 210px;
+	text-align: Right;
+	padding: 6px;
+}
+
+#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#main {
+	background-image: url(images/main.jpg);
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	background-repeat: no-repeat;
+}
+
+#img {
+	margin: 8px;
+}
+	
+
+#footer {
+	text-align: center;
+	clear: both;
+	color: 696969;
+	background-color: #0A0A0A;
+	padding: 20px;
+}
+
+.float_left {
+	float: left;
+    margin-right: 5px;
+	margin-bottom: 3px;
+}
+
+#footer a:link {
+	color: #696969;
+	text-decoration: none;
+}
+		
+#footer a:visited {
+	color: #696969;
+    text-decoration: none;
+}
+		   
+#footer a:hover {
+	color: #5C5C5C;
+    text-decoration: underline;
+}
+		  
+#footer a:active {
+	color: #696969;
+    text-decoration: none;
+}
+
+p {
+	padding-bottom: 25px;
+}
+
+h1 {
+	font-family: Nosferatu, "Times New Roman", Times, serif;
+	font-size: 16pt;
+	font-style: italic;
+	color: #000000;
+	margin-left: 360px;
+	padding-top: 75px;
+}
+
+h2 {
+	font-family: Nosferatu, "Times New Roman", Times, serif;
+	font-size: 1.6em;
+	border-bottom: 1px solid gray;
+	margin-bottom: 10px;
+	font-style: italic;
+	color: #FFFFFF;
+}
+
+
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+		
+a:visited {
+	color: #ffffff;
+    text-decoration: none;
+}
+		   
+a:hover {
+	color: #5C5C5C;
+	background-color: #DBDBDB;
+	text-decoration: underline;
+}
+		  
+a:active {
+	color: #000000;
+    text-decoration: none;
+}
+
+#navlist li
+{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+table
+{
+	border-spacing:10px;
+}

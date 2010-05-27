@@ -1,0 +1,15 @@
+import ConfigParser
+from scorebot.config.ConfigHandler import ConfigHandler
+
+class RoundConfigHandler(ConfigHandler):
+
+	def canHandle(self,cip,section):
+		return section.startswith("round")
+
+	def parse(self,cip,section,config):
+		interval_text = cp.get(section,"round_interval_seconds")
+		min,max = map(int,interval_text.split(','))
+		assert(min <= max)
+
+		config.setRoundLengthMin(min)
+		config.setRoundLengthMax(max)
