@@ -63,6 +63,7 @@ class ServiceBot(Process):
 		finally:
 			#cleanup
 			self.logger.info("Terminating...")
+			# FIXME - What is this comment for?
 			print "WTF",self.scheduler
 			self.scheduler.quit()
 			self.comm.kill()

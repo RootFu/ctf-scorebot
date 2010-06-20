@@ -3,6 +3,7 @@ import socket
 import threading
 import Queue
 import time
+import sys
 
 from scorebot.common.communication import BotMessage
 
@@ -89,6 +90,7 @@ class BotCommClient(threading.Thread):
 		self.protocolInit()
 
 		while(True):
+		    try:
 			with self.alive_lock:
 				if(self.alive == False):
 					return
@@ -97,6 +99,15 @@ class BotCommClient(threading.Thread):
 				self.dispatcher.push(msg+self.dispatcher.terminator)
 
 			asyncore.loop(timeout=0.05,count=1,map=self.map)
+		    except Exception as e:
+			"""
+			FIXME
+			Frequently this is the result of the BotCommServer
+			shutting down.  We might try adding reconnect code,
+			but for now handle the exception by just shutting down.
+			"""
+			print e
+			sys.exit(1)
 
 	def send(self,msg):
 		with self.init_cond:

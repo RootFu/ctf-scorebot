@@ -11,8 +11,7 @@ class Scoring():
 
 """
 1 point for every flag captured
-1 point for every service which had no
-flags captured this round
+1 point for every service which had no flags captured this round
 """
 class BasicScoring():
 

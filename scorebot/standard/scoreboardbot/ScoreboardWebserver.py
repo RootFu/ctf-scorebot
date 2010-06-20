@@ -76,3 +76,7 @@ class ScoreboardWebserver(SocketServer.ThreadingMixIn,HTTPServer):
 
 	def quit(self):
 		self.running = False
+		# FIXME: This method doesn't seem to get called anyway
+		# Do we really need to call server_close too?
+		print "ScoreboardWebserver.quit()"
+		self.server_close

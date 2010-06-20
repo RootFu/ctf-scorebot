@@ -27,8 +27,10 @@ class SubmitBot(Process):
 		self.comm = None
 		self.init = init
 		self.webserver = WebserverThread(self.conf)
+		self.logger = conf.buildLogger("SubmitBot")
 		
 	def run(self):
+		self.logger.debug("Starting SubmitBot webserver thread")
 		self.webserver.start()
 
 		server_info = self.conf.getGameStateServerInfo()
@@ -53,5 +55,5 @@ class SubmitBot(Process):
 				
 			self.comm.kill()
 		except Exception as e:
-			print "An exception occured in submitbot"
+			self.logger.error("Exception %s" % e)
 	
